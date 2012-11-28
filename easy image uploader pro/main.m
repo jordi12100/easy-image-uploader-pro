@@ -13,6 +13,7 @@
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
+            NSLog(@"Running application");
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([eiopro_AppDelegate class]));
     }
 }

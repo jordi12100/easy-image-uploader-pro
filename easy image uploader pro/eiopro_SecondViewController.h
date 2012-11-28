@@ -8,6 +8,3 @@
 
 #import <UIKit/UIKit.h>
 
-@interface eiopro_SecondViewController : UIViewController
-
-@end

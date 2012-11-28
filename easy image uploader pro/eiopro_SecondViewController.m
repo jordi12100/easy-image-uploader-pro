@@ -10,6 +10,7 @@
 
 @interface eiopro_SecondViewController ()
 
+
 @end
 
 @implementation eiopro_SecondViewController
@@ -17,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"Login form did load");
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
