@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MWPhotoBrowser.h"
 
-@interface ImageViewController : UIViewController <MWPhotoBrowserDelegate>
+
+@interface ImageViewController : UIViewController
 
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *LogoutButton;

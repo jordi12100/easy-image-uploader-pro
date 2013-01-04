@@ -1,5 +1,5 @@
 //
-//  ImageView.h
+//  settingsViewController.h
 //  easy image uploader pro
 //
 //  Created by Jordi Kroon on 22-12-12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ImageView : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
+@interface settingsViewController : UITableViewController
 
-    NSArray *tableData;
-}
 @end

@@ -88,6 +88,11 @@
     [self.tableView addGestureRecognizer:gestureRecognizer];
     
 }
+[self logOut]
+
++ (void) logOut {
+    
+}
 - (void)viewWillAppear:(BOOL)animated
 {
     NSLog(@"View appears");
@@ -115,7 +120,7 @@
     if([PKEYvalue isEqualToString:@""] || UIDvalue == 0) {
         // do nothing
     } else {
-        [self performSegueWithIdentifier:@"pushToImageViewer" sender:self];
+        [self performSegueWithIdentifier:@"pushToImageViewer" sender:self ];
     }
     
 }
