@@ -52,7 +52,7 @@
 @end
 
 
-@implementation UILoginClass
+@implementation UILoginClass : UITableViewController
 
 @synthesize RegisterPass;
 @synthesize RegisterUser;
@@ -88,11 +88,7 @@
     [self.tableView addGestureRecognizer:gestureRecognizer];
     
 }
-[self logOut]
 
-+ (void) logOut {
-    
-}
 - (void)viewWillAppear:(BOOL)animated
 {
     NSLog(@"View appears");
@@ -253,7 +249,7 @@
                         [self performSegueWithIdentifier:@"pushToImageViewer" sender:self];
                         
                         
-                        
+                         [self logOut];
                     }
                     
                 }
@@ -267,6 +263,24 @@
         }
     }
 }
+
+- (void)logOut{
+
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"AppData.plist"];
+    
+    NSMutableDictionary* plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+    
+    [plistDict setValue:@"" forKey:@"pkey"];
+    [plistDict setValue:0 forKey:@"uid"];
+    
+    [plistDict writeToFile:path atomically: YES];
+    
+    [self performSegueWithIdentifier:@"x" sender:self];
+    
+}
+
 
 
 - (BOOL)validateEmail:(NSString *)emailStr {
@@ -422,7 +436,6 @@
     [self setRegisterUser:nil];
     [self setRegisterPass:nil];
     [self setRegisterEmail:nil];
-    [self setRegisterButton:nil];
     [self setLoginButton:nil];
     [super viewDidUnload];
 }

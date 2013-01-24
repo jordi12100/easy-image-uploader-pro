@@ -7,7 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAD.h>
+#import <SystemConfiguration/SystemConfiguration.h>
 
-@interface eiopro_FirstViewController : UIViewController
+
+@class Reachability;
+
+Reachability* internetReachable;
+Reachability* hostReachable;
+
+@interface eiopro_FirstViewController : UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIActionSheetDelegate,ADBannerViewDelegate ,
+UIAlertViewDelegate >
+
+@property (retain, nonatomic) IBOutlet UIBarButtonItem *UploadButton;
+@property (retain, nonatomic) IBOutlet UIImageView *ImageView;
+
+
+
+-(void) checkNetworkStatus:(NSNotification *)notice;
+- (IBAction)tapUpload:(id)sender;
+- (IBAction)uploadImage:(id)sender;
+
 
 @end
+

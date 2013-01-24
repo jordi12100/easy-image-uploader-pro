@@ -28,7 +28,7 @@
 		8DF107C91614B5CD007A8FF7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF107C81614B5CD007A8FF7 /* Default@2x.png */; };
 		8DF107CB1614B5CD007A8FF7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF107CA1614B5CD007A8FF7 /* Default-568h@2x.png */; };
 		8DF107CE1614B5CD007A8FF7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DF107CC1614B5CD007A8FF7 /* MainStoryboard.storyboard */; };
-		8DF107D11614B5CD007A8FF7 /* eiopro_FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF107D01614B5CD007A8FF7 /* eiopro_FirstViewController.m */; };
+		8DF107D11614B5CD007A8FF7 /* eiopro_FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF107D01614B5CD007A8FF7 /* eiopro_FirstViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8DF107DA1614B5CD007A8FF7 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF107D91614B5CD007A8FF7 /* second.png */; };
 		8DF107DC1614B5CD007A8FF7 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF107DB1614B5CD007A8FF7 /* second@2x.png */; };
 		8DF107E41614B5CD007A8FF7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF107E31614B5CD007A8FF7 /* SenTestingKit.framework */; };
@@ -36,8 +36,6 @@
 		8DF107E61614B5CD007A8FF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF107B61614B5CD007A8FF7 /* Foundation.framework */; };
 		8DF107FB1614B852007A8FF7 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF107FA1614B851007A8FF7 /* appicon.png */; };
 		8DF107FD1614B855007A8FF7 /* appicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF107FC1614B855007A8FF7 /* appicon@2x.png */; };
-		8DF107FF1614B85F007A8FF7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF107FE1614B85E007A8FF7 /* Default.png */; };
-		8DF108011614B864007A8FF7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF108001614B864007A8FF7 /* Default@2x.png */; };
 		8DF108041614BACD007A8FF7 /* photos_polaroid.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF108021614BACC007A8FF7 /* photos_polaroid.png */; };
 		8DF108051614BACD007A8FF7 /* photos_polaroid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF108031614BACC007A8FF7 /* photos_polaroid@2x.png */; };
 		8DFA13401694ADA500D1D248 /* cog_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DFA133E1694ADA500D1D248 /* cog_02.png */; };
@@ -302,8 +300,6 @@
 				8DF107DC1614B5CD007A8FF7 /* second@2x.png in Resources */,
 				8DF107FB1614B852007A8FF7 /* appicon.png in Resources */,
 				8DF107FD1614B855007A8FF7 /* appicon@2x.png in Resources */,
-				8DF107FF1614B85F007A8FF7 /* Default.png in Resources */,
-				8DF108011614B864007A8FF7 /* Default@2x.png in Resources */,
 				8DF108041614BACD007A8FF7 /* photos_polaroid.png in Resources */,
 				8DF108051614BACD007A8FF7 /* photos_polaroid@2x.png in Resources */,
 				8D2A52A0161F666500B9891C /* AppData.plist in Resources */,
@@ -447,10 +443,6 @@
 				GCC_PREFIX_HEADER = "easy image uploader pro/easy image uploader pro-Prefix.pch";
 				INFOPLIST_FILE = "easy image uploader pro/easy image uploader pro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../Downloads/Google Analytics SDK/Library\"",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -463,10 +455,6 @@
 				GCC_PREFIX_HEADER = "easy image uploader pro/easy image uploader pro-Prefix.pch";
 				INFOPLIST_FILE = "easy image uploader pro/easy image uploader pro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../Downloads/Google Analytics SDK/Library\"",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

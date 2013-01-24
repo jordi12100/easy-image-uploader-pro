@@ -20,7 +20,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *RegisterUser;
 @property (strong, nonatomic) IBOutlet UITextField *RegisterPass;
 @property (strong, nonatomic) IBOutlet UITextField *RegisterEmail;
-@property (strong, nonatomic) IBOutlet UILabel *RegisterButton;
+
 
 
 
@@ -29,7 +29,6 @@
 
 
 - (IBAction)textFieldReturn:(id)sender;
-- (IBAction)backgroundTouched:(id)sender;
 
 -(NSString*)stringToSha1;
 

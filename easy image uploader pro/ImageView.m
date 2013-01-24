@@ -91,8 +91,7 @@
          * exist		: user already exist
          * unknownkey	: key is not equals to uvT6VimgIos
          */
-        
-        [UILoginClass logOut]
+
         if([returnString isEqualToString: @"noauth"] || [returnString isEqualToString: @"error"] || [returnString isEqualToString: @"unknownkey"]) {
             
             NSString *Error;
